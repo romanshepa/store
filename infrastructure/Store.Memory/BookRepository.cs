@@ -6,9 +6,9 @@ namespace Store.Memory
     {
         private  readonly Book[] _books = new[]
         {
-            new Book(1, "Art of Programming"),
-            new Book(2, "Refactoring"),
-            new Book(3, "C# Programming Language")
+            new Book(1, "ISBN 12312-31231", "D.Knut","Art of Programming"),
+            new Book(2,  "ISBN 12451-30231", "M. Fowler", "Refactoring"),
+            new Book(3,  "ISBN 77312-31251", "B. Kernighan", "C# Programming Language")
         };
 
         public Book[] GetAllByTitle(string titlePart)
