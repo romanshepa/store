@@ -1,27 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domain", "domain", "{7213E19B-A5E0-48FF-BDE7-85AAA4283C26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store", "domain\Store\Store.csproj", "{065E51AD-5DFC-4807-9558-236147054C9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store", "domain\Store\Store.csproj", "{065E51AD-5DFC-4807-9558-236147054C9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{21BEA9CC-6596-4EB3-BC58-A205EB1ACF30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Memory", "infrastructure\Store.Memory\Store.Memory.csproj", "{5229E544-E320-40CF-840D-5A3D0FACF070}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{065E51AD-5DFC-4807-9558-236147054C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{065E51AD-5DFC-4807-9558-236147054C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{065E51AD-5DFC-4807-9558-236147054C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{065E51AD-5DFC-4807-9558-236147054C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5229E544-E320-40CF-840D-5A3D0FACF070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5229E544-E320-40CF-840D-5A3D0FACF070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5229E544-E320-40CF-840D-5A3D0FACF070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5229E544-E320-40CF-840D-5A3D0FACF070}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{065E51AD-5DFC-4807-9558-236147054C9A} = {7213E19B-A5E0-48FF-BDE7-85AAA4283C26}
+		{5229E544-E320-40CF-840D-5A3D0FACF070} = {21BEA9CC-6596-4EB3-BC58-A205EB1ACF30}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6533F9F-EBDF-4A44-909C-A3DBC73713E2}
 	EndGlobalSection
 EndGlobal
