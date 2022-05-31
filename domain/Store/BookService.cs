@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Store
 {
-    internal class BookService
+    public class BookService
     {
+        public Book[] GetAllByQuery(string query)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
