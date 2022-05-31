@@ -19,4 +19,9 @@ public class Book
 
         Title = title;
     }
+
+    internal static bool IsIsbn(string s)
+    {
+        return false;
+    }
 }
