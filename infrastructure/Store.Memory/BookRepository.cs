@@ -11,7 +11,7 @@ namespace Store.Memory
             new Book(3,  "ISBN 77312-31251", "B. Kernighan", "C# Programming Language")
         };
 
-        public Book[] GetAllByTitle(string titlePart)
+        public Book[] GetAllByTitleOrAuthor(string titlePart)
         {
             return _books.Where(book => book.Title.Contains(titlePart)).ToArray();
         }

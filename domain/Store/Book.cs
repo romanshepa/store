@@ -5,17 +5,17 @@ public class Book
 
     public string Isbn { get; }
 
-    public string Autor { get; }
+    public string Author { get; }
 
     public string Title { get; }
 
-    public Book(int id, string isbn, string autor, string title)
+    public Book(int id, string isbn, string author, string title)
     {
         Id = id;
 
         Isbn = isbn;
 
-        Autor = autor;
+        Author = author;
 
         Title = title;
     }

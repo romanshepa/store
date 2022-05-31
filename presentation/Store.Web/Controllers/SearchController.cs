@@ -13,7 +13,7 @@ namespace Store.Web.Controllers
 
         public IActionResult Index(string query)
         {
-            var books = bookRepository.GetAllByTitle(query);
+            var books = bookRepository.GetAllByTitleOrAuthor(query);
             
             return View(books);
         }
