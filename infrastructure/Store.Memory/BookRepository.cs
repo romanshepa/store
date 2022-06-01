@@ -13,12 +13,12 @@ namespace Store.Memory
 
         public Book[] GetAllByIsbn(string isbn)
         {
-            return _books.Where(book => book.Isbn.Contains(isbn)).ToArray();
+            return _books.Where(book => book.Isbn == isbn).ToArray();
         }
 
-        public Book[] GetAllByTitleOrAuthor(string titlePart)
+        public Book[] GetAllByTitleOrAuthor(string query)
         {
-            return _books.Where(book => book.Title.Contains(titlePart)).ToArray();
+            return _books.Where(book => book.Author.Contains(query) || book.Title.Contains(query)).ToArray();
         }
     }
 }
